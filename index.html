@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finanças</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <div class="juntar">
+            <section class="formulario">
+                <form action="" onsubmit="return Adicionar()">
+                    <p>Descrição: </p>
+                    <div class="inputs">
+                        <input type="text" id="descricao" required>
+                    </div>
+                    <br>
+                    <p>Deseja retirar(1) ou depositar(2)? </p>
+                    <div class="inputs">
+                        <input type="number" id="finalidade" required>
+                    </div>
+                    <br>
+                    <p>Valor: </p>
+                    <div class="inputs">
+                        <input type="number" id="valor" step="0.01" required>
+                    </div>
+                    <br>
+                    <input type="submit" value="Enviar">
+                </form>
+            </section>
+
+            <section id="saldo">
+                <div>
+                    <h2>Saldo:</h2>
+                </div>
+                <div id="divSaldo">
+                    <h2 id="S">$</h2>
+                    <h2 id="mostrarSaldo"></h2>
+                </div>
+            </section>
+        </div>
+
+        <section id="historico">
+            <div id="divHistorico">
+                <h2>Histórico:</h2>
+            </div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,63 @@
+body {
+    font-size: larger;
+}
+
+section {
+    background-color: lightgrey;
+    border-bottom: 2px solid black;
+    margin: 10px;
+    padding: 10px;
+}
+
+div h2 {
+    display: inline;
+}
+
+#saldo div h2 {
+    font-size: 3em;
+}
+
+form p {
+    display: inline;
+}
+
+form div {
+    position: relative;
+}
+
+input {
+    width: 350px;
+    padding: 10px;
+    font-size: 1em;
+}
+
+input[type="number"] {
+    width: 150px;
+}
+
+input[type="submit"] {
+    background-color: rgb(0, 183, 0);
+    border: none;
+    border-radius: 15px;
+    width: 100%;
+    font-size: 1.2em;
+}
+
+.juntar {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+}
+
+.juntar section {
+    width: 25%;
+    min-height: 70px;
+}
+
+#saldo {
+    max-width: 25%;
+}
+
+.formulario {
+    min-width: calc(75% - 80px);
+}
